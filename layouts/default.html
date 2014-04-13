@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Alex Chernyakhovsky (achernya) - {{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{# stylesheets.load }}
+      bootstrap.min.css
+    {{/ stylesheets.load }}
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+	<div class="col-md-9 logo">
+	  <h1><a href="//achernya.com/">Alex Chernyakhovsky</a></h1>
+	</div>
+	<div class="col-md-3 pull-right">
+	</div>
+      </div>
+      <hr>
+      <div class="row">
+	<div class="col-md-5">
+	  <div class="sidebar-nav well">
+	    <a href="//achernya.com/" class="thumbnail">
+	      <img src="/assets/media/img/achernya.jpg" alt="">
+	    </a>
+	    <div>
+	      <address>
+		<dl class="dl-horizontal">
+		  <dt>Location</dt>
+		  <dd><i class="glyphicon glyphicon-map-marker"></i> Cambridge, MA, 02139</dd>
+		  <dt>Email</dt>
+		  <dd><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:alex@achernya.com">alex@achernya.com</a></dd>
+		</dl>
+	      </address>
+	    </div>
+	    <div class="list-group">
+	      <a class="list-group-item active" href="javascript:"><i class="glyphicon glyphicon-white glyphicon glyphicon-tag"></i> Links</a>
+	      <a class="list-group-item" href="/pdf/achernya-resume.pdf"><i class="glyphicon glyphicon-file"></i> Résumé</a>
+	      <a class="list-group-item" href="http://blog.achernya.com"><i class="glyphicon glyphicon-edit"></i> Blog</a>
+	      <a class="list-group-item" href="/publications"><i class="glyphicon glyphicon-pencil"></i> Publications</a>
+	      <a class="list-group-item" href="http://www.linkedin.com/in/achernya"><i class="glyphicon glyphicon-list-alt"></i> Visit my LinkedIn</a>
+	      <a class="list-group-item" href="https://www.github.com/achernya"><i class="glyphicon glyphicon-cog"></i> View my open-source projects on GitHub</a>
+	      <a class="list-group-item" href="http://www.flickr.com/photos/achernya"><i class="glyphicon glyphicon-camera"></i> View my photos on Flickr</a>
+	    </div>
+	  </div>
+	</div>
+	<!-- right -->
+	<div class="col-md-7">
+	  {{{ content }}}
+	</div>
+      </div>
+      <hr>
+      <div class="row">
+	<p>
+	  Copyright &copy; 2012-2014 Alex Chernyakhovsky
+	</p>
+      </div>
+    </div>
+    {{# javascripts.load }}
+      jquery-1.10.2.min.js
+      bootstrap.min.js
+    {{/ javascripts.load }}
+    {{{ widgets.syntax }}}
+    {{{ widgets.analytics }}}
+  </body>
+</html>

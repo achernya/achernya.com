@@ -1,0 +1,27 @@
+base_path : '/'
+production_url : 'http://achernya.com/'
+
+
+_root:
+  paginator:
+    enable: false
+  rss:
+    enable: false
+
+widgets :
+  analytics :
+    use : google
+    # -- config for google --
+    tracking_id : 'UA-33948527-1'
+
+pdf :
+  use: static
+  paginator:
+    enable: false
+  rss:
+    enable: false
+
+fonts :
+  use: fonts
+
+
