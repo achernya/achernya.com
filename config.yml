@@ -12,7 +12,7 @@ widgets :
   analytics :
     use : google
     # -- config for google --
-    tracking_id : 'UA-33948527-1'
+    tracking_id : 'UA-48620720-1'
 
 pdf :
   use: static
